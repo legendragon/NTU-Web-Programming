@@ -1,4 +1,4 @@
-# ICE01 - Todo List
+# ICE01 - Todolist
 
 In-class practice: a minimal todo list built with plain HTML/CSS/JS.
 
