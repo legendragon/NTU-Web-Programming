@@ -5,7 +5,7 @@ This repository collects course assignments.
 ## Assignments
 
 <!-- ASSIGNMENTS:START -->
-- [HW01 - Todo List](assignments/hw01-todolist/)
+- [ICE01 - Todo List](assignments/ice01-todolist/)
 <!-- ASSIGNMENTS:END -->
 
 ## GitHub Pages
