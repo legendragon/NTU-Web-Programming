@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>todo list</h1>
+
+      <section class="composer" aria-label="Add new todo">
+        <div class="row">
+          <input id="title-input" type="text" placeholder="new todo" />
+          <button id="add-btn" type="button">add</button>
+        </div>
+        <textarea id="desc-input" rows="3" placeholder="description"></textarea>
+      </section>
+
+      <section class="list" aria-label="Todo list">
+        <ul id="todo-list"></ul>
+      </section>
+    </main>
+
+    <template id="todo-template">
+      <li class="todo-item">
+        <label class="check">
+          <input type="checkbox" />
+          <span class="box" aria-hidden="true"></span>
+        </label>
+        <div class="content">
+          <div class="title"></div>
+          <div class="desc"></div>
+        </div>
+        <button class="delete" type="button">delete</button>
+      </li>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
