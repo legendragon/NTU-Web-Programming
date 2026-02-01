@@ -25,6 +25,23 @@ body {
   text-align: center;
 }
 
+.topbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 18px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: var(--ink);
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  background: #fff7e8;
+}
+
 h1 {
   margin: 0 0 24px;
   font-size: 34px;

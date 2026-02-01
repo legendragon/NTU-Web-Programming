@@ -15,38 +15,63 @@
         color: #1b1b1b;
       }
       .page {
-        max-width: 720px;
+        max-width: 820px;
         margin: 60px auto 80px;
         padding: 0 20px;
       }
       h1 {
-        margin: 0 0 16px;
+        margin: 0 0 10px;
         font-size: 32px;
       }
       p {
-        margin: 0 0 24px;
+        margin: 0 0 26px;
         color: #4e4e4e;
+      }
+      .list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 14px;
       }
       .card {
         background: #ffffff;
         border: 2px solid #d7d7d7;
-        border-radius: 12px;
+        border-radius: 14px;
         padding: 16px 18px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 16px;
       }
-      a {
-        color: #1b1b1b;
-        text-decoration: none;
-        font-weight: 600;
+      .card-title {
+        font-weight: 700;
+        font-size: 18px;
       }
-      .tag {
+      .card-desc {
+        margin-top: 6px;
+        font-size: 13px;
+        color: #5a5a5a;
+      }
+      .card-link {
         background: #ff5a58;
         color: #ffffff;
+        text-decoration: none;
         border-radius: 999px;
-        padding: 4px 10px;
+        padding: 6px 14px;
         font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      @media (max-width: 560px) {
+        .card {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .card-link {
+          align-self: flex-end;
+        }
       }
     </style>
   </head>
@@ -55,10 +80,15 @@
       <h1>NTU Web Programming - Assignments</h1>
       <p>Course work collection.</p>
 
-      <div class="card">
-        <a href="assignments/hw01-todolist/index.html">HW01 - Todo List</a>
-        <span class="tag">view</span>
-      </div>
+      <ul class="list">
+        <li class="card">
+          <div>
+            <div class="card-title">HW01 - Todo List</div>
+            <div class="card-desc">A minimal todo list built with plain HTML/CSS/JS.</div>
+          </div>
+          <a class="card-link" href="assignments/hw01-todolist/index.html">open</a>
+        </li>
+      </ul>
     </main>
   </body>
 </html>
