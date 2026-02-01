@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IT Avalon - Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top">
+        <a class="logo" href="#hero">
+          <span class="logo-mark">IA</span>
+          <span class="logo-text">IT Avalon</span>
+        </a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#blog">Blog</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu" type="button" aria-label="Open menu">☰</button>
+      </header>
+
+      <main>
+        <section id="hero" class="hero">
+          <div class="hero-wave" aria-hidden="true">
+            <svg viewBox="0 0 1200 220" preserveAspectRatio="none">
+              <path
+                d="M0,120 C150,200 350,40 600,120 C850,200 1050,80 1200,130 L1200,0 L0,0 Z"
+                fill="#f7d6ce"
+              />
+            </svg>
+          </div>
+          <div class="hero-grid">
+            <div class="hero-text" data-reveal>
+              <p class="eyebrow">Warm IT · Human-centered</p>
+              <h1>Warm‑hearted IT, human‑centered solutions.</h1>
+              <p class="lead">
+                I am IT Avalon, an IT engineer who turns complex tech into calm,
+                friendly experiences. I focus on clarity, kindness, and reliability.
+              </p>
+              <div class="hero-actions">
+                <a class="btn primary" href="#blog">See blog</a>
+                <a class="btn ghost" href="#contact">Contact me</a>
+              </div>
+              <div class="micro">
+                <span class="pill">UI calm</span>
+                <span class="pill">TypeScript</span>
+                <span class="pill">Human-first</span>
+              </div>
+            </div>
+            <div class="hero-art" data-reveal>
+              <div class="portrait">
+                <div class="portrait-bg"></div>
+                <div class="portrait-card">
+                  <div class="face"></div>
+                  <div class="laptop"></div>
+                  <div class="notes">Warm IT</div>
+                </div>
+              </div>
+              <div class="nodes" id="nodes"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section" data-reveal>
+          <div class="section-head">
+            <h2>About</h2>
+            <p>I love making technology feel gentle, like a quiet cup of tea.</p>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <h3>Values</h3>
+              <p>Clarity, empathy, and small details that make people feel safe.</p>
+            </article>
+            <article class="card">
+              <h3>Tools</h3>
+              <p>TypeScript, HTML/CSS, UI systems, and thoughtful prototypes.</p>
+            </article>
+            <article class="card">
+              <h3>Interests</h3>
+              <p>Soft interfaces, accessible design, and warm tech communities.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="blog" class="section" data-reveal>
+          <div class="section-head">
+            <h2>Blog</h2>
+            <p>Short notes on building calm and friendly software.</p>
+          </div>
+          <div class="blog-grid">
+            <article class="post">
+              <span class="tag">UI</span>
+              <h3>Designing for emotional comfort</h3>
+              <p>Small spacing, soft colors, and clear words reduce anxiety.</p>
+            </article>
+            <article class="post">
+              <span class="tag">TS</span>
+              <h3>Why TypeScript feels like a safety blanket</h3>
+              <p>Types help me be kind to future me (and teammates too).</p>
+            </article>
+            <article class="post">
+              <span class="tag">Process</span>
+              <h3>From messy notes to calm interfaces</h3>
+              <p>How I organize ideas with gentle structure and iteration.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="section" data-reveal>
+          <div class="section-head">
+            <h2>Experience</h2>
+            <p>Learning, experimenting, and building warm digital systems.</p>
+          </div>
+          <div class="timeline">
+            <div class="time-item">
+              <span class="dot"></span>
+              <div>
+                <h3>2025 · Campus IT Projects</h3>
+                <p>Built small tools to help classmates share resources.</p>
+              </div>
+            </div>
+            <div class="time-item">
+              <span class="dot"></span>
+              <div>
+                <h3>2024 · UX + Frontend Practice</h3>
+                <p>Explored warm interface patterns and micro-interactions.</p>
+              </div>
+            </div>
+            <div class="time-item">
+              <span class="dot"></span>
+              <div>
+                <h3>2023 · IT Foundations</h3>
+                <p>Studied networking, system basics, and human-centered tech.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section" data-reveal>
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>Let’s build something warm and helpful together.</p>
+          </div>
+          <form class="contact">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea rows="4" placeholder="Tell me about your idea..."></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send message</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> IT Avalon</span>
+        <span class="footer-note">Warm IT, gentle interfaces.</span>
+      </footer>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

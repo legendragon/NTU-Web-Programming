@@ -5,6 +5,7 @@ This repository collects course assignments.
 ## Assignments
 
 <!-- ASSIGNMENTS:START -->
+- [HW01 - Personal Website](assignments/hw01-personal-site/)
 - [ICE01 - Todolist](assignments/ice01-todolist/)
 <!-- ASSIGNMENTS:END -->
 
